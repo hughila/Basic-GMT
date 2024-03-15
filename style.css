@@ -334,24 +334,117 @@
     width:100%;
     border-top-left-radius:0rem;
   }
-  banner_faq a{
+  .banner_faq a{
     justify-content:center;
   }
   /* offer */
-  background:gray{
-    height:100vh;  
+  .offer{
+    background:grey ;
+    background:var(--light);
+    height:80vh ;
   }
-  .offer_text{
-    max-width:65rem;
-    display:flex;
-    flex-direction:column;
+  .offer__text{
+    max-width: 65rem;
+    display: flex;
+    flex-direction: column;
     gap:2rem;
   }
-  offer_text p{
-    font-size:1.5rem;
+  .offer__text h2{
+    font-size: 4rem;
+    font-weight: 600;
+    color: #134A8C;
+  }
+  .offer__text p{
+    font-weight: 600;
+    }
+  .offer__wrapper{
+    display: flex;
+    position: absolute;
+    transform:translateY(15rem);
+  }
+  /* HOW */
+  .how{
+    background:var(--primary);
+  }
+  .how_wrapper{
+    display:grid;
+    grid-template-columns:2fr 2fr;
+    min-height:500px;
+  }
+  .how_ate{
+    background-image:url("img/different_img.jpg");
+    background-size: cover;
+    background-position: center;
+    height:100%;
+  }
+  .how_text{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    gap:2rem;
+    max-width:75rem;
+    margin:0 auto;
+  }
+  .how_text h2{
+    color:var(--light);
+    font-size:4rem;
     font-weight:600;
+  }
+  .how_text p{
+    color:var(--light);
+  }
+  
+  @media screen and (max-width:500px){
+  .how_ate{
+    display:none;
+  }
+  .how_wrapper{
+    grid-template-columns:none;
+  }
+  .how_text h2{
+    font-size:4rem;
+    text-align:center; 
+  }
+  .how_text p{
+    font-size:2rem;
     text-align:center;
   }
+  }
+  /* RECOMMEND */
+.recommend{
+  background:var(--light);
+}
+.recommended__wrapper {
+  display: grid;
+  place-items: center;
+  min-height: 400px;
+  gap: 2rem;
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+.recommended__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.recommended__text h5 {
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 4rem;
+  max-width: 45rem;
+  margin: 0;
+  text-align: center;
+}
+
+
+
+
+
+
 /*REPEATABLE PATTERN */
   :root{
     --light:#ffffff;
