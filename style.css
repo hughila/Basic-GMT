@@ -309,7 +309,7 @@
   display:flex;
   gap:3rem;
 }
-@media screen and (max-width:500px){
+@media screen and (max-width:500px){}
   .banner_text h1{
     font-size:4rem;
     text-align:center;
@@ -334,11 +334,24 @@
     width:100%;
     border-top-left-radius:0rem;
   }
-  .banner_faq a{
+  banner_faq a{
     justify-content:center;
   }
-}
-
+  /* offer */
+  background:gray{
+    height:100vh;  
+  }
+  .offer_text{
+    max-width:65rem;
+    display:flex;
+    flex-direction:column;
+    gap:2rem;
+  }
+  offer_text p{
+    font-size:1.5rem;
+    font-weight:600;
+    text-align:center;
+  }
 /*REPEATABLE PATTERN */
   :root{
     --light:#ffffff;
